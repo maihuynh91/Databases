@@ -1,0 +1,55 @@
+
+Question 1: What data types do each of these values represent?
+      "A Clockwork Orange" - String.
+      42     - Integer.
+      09/02/1945 - Date
+      98.7  -Float
+      $15.99  -Currency Format
+Question 2: Explain when a database would be used. Explain when a text file would be used.
+  Text file is used to store standard and structured texual data or information that is human readable.
+  Database: when we want to store a large amount of information that could be easy to manage, update, and retrieve through an interface, that can 
+  handle many applications accessing the data. Database files are not human readable.
+  
+Question 3: Describe one difference between SQL and other programming languages.
+    SQL is a declarative language. With other programming languages, we have to define algorithms for what we are looking for; 
+    but with SQL, we just tell database what we are looking for without defining algorithms. 
+Question 4: In your own words, explain how the pieces of a database system fit together at a high level.
+    Relational databases use table to store data. Different types of data are stored in different columns, and rows make up complete
+    conceptual unit. Because of the arrangement of data in columns, we can quickly compare information. Databases use uniformity to 
+    build completely new tables out of required information from existing tables. 
+
+
+Question 5: Explain the meaning of table, row, column, and value.
+     Table is a set of data elements using a mode of collumns and rows.
+     Rows represents a set of related data.
+     Columns define what data is stored there.
+     Value is piece of information that column name describes.
+Question 6: List three data types that can be used in a table.
+     String, Integer, Boolean.
+
+Question 7: Given this payments table, provide an English description of the following queries and include their results:
+     I'm looking for the date and the amount of the payments.
+     I'm looking for the amount of the payments where the amount is greater than 500. 
+     I'm looking for everything of the payments where the payee is 'Mega Foods'.
+     
+ Question 8: Given this users table, write SQL queries using the following criteria and include the output:
+ 
+The email and sign-up date for the user named DeAndre Data.
+=> SELECT email, signup
+   FROM users
+   WHERE name = DeAndre Data;
+Output: email: datad@comcast.net    signup: 2008-01-20
+ 
+The user ID for the user with email 'aleesia.algorithm@uw.edu'.
+=> SELECT userid
+   FROM users
+   WHERE email = aleesia.algorithm@uw.edu;
+Output: userid: 1
+
+All the columns for the user ID equal to 4.
+=> SELECT *
+   FROM users
+   WHERE userid = 4;
+Output: userid: 4	name: Brandy Boolean	email: bboolean@nasa.gov	signup: 1999-10-15
+     
+    
